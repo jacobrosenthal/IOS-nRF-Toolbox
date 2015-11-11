@@ -7,6 +7,7 @@
 //
 
 #import "AppUtilities.h"
+#import <UIKit/UIKit.h>
 
 @implementation AppUtilities
 

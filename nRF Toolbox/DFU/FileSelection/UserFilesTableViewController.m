@@ -37,7 +37,7 @@
 
 @implementation UserFilesTableViewController
 
-int PAGE_NUMBERS;
+int PAGE_NUMBERS2;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -89,7 +89,7 @@ int PAGE_NUMBERS;
                                @"EmailAttachment1.png",
                                @"EmailAttachment2.png"];
     
-    PAGE_NUMBERS = (int)[self.pageContentImages count];
+    PAGE_NUMBERS2 = (int)[self.pageContentImages count];
 }
 
 -(void)showAddFilesDemo
@@ -119,7 +119,7 @@ int PAGE_NUMBERS;
 
 -(PageImageViewController *)createPageContentViewControllerAtIndex:(NSUInteger)index
 {
-    if (index >= PAGE_NUMBERS || PAGE_NUMBERS < 1) {
+    if (index >= PAGE_NUMBERS2 || PAGE_NUMBERS2 < 1) {
         return nil;
     }
     PageImageViewController *pageContentVC = [self.storyboard instantiateViewControllerWithIdentifier:@"IdPageImageViewController"];
@@ -152,7 +152,7 @@ int PAGE_NUMBERS;
         return nil;
     }
     index++;
-    if (index == PAGE_NUMBERS) {
+    if (index == PAGE_NUMBERS2) {
         NSLog(@"page index is equal to Max Page Number");
         return nil;
     }
@@ -163,8 +163,8 @@ int PAGE_NUMBERS;
 
 - (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController
 {
-    NSLog(@"presentationCountForPageViewController %d",PAGE_NUMBERS);
-    return PAGE_NUMBERS;
+    NSLog(@"presentationCountForPageViewController %d",PAGE_NUMBERS2);
+    return PAGE_NUMBERS2;
 }
 
 - (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController
