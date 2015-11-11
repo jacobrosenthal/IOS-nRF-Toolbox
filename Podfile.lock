@@ -1,0 +1,26 @@
+PODS:
+  - nordic-ble-dfu (0.1.0):
+    - SSZipArchive (= 0.3.2)
+  - SSZipArchive (0.3.2)
+
+DEPENDENCIES:
+  - nordic-ble-dfu (from `https://github.com/jacobrosenthal/nordic-ble-dfu.git`, commit
+    `930a182eda8735fab90d05276e6e0076ae6fe4a1`, branch `master`)
+
+EXTERNAL SOURCES:
+  nordic-ble-dfu:
+    :branch: master
+    :commit: 930a182eda8735fab90d05276e6e0076ae6fe4a1
+    :git: https://github.com/jacobrosenthal/nordic-ble-dfu.git
+
+CHECKOUT OPTIONS:
+  nordic-ble-dfu:
+    :branch: master
+    :commit: 930a182eda8735fab90d05276e6e0076ae6fe4a1
+    :git: https://github.com/jacobrosenthal/nordic-ble-dfu.git
+
+SPEC CHECKSUMS:
+  nordic-ble-dfu: ae75d6db2654bcb31a19323bc4a3bdaa35686a46
+  SSZipArchive: 11801759495fa4efb7512ef652eb0042d68305d7
+
+COCOAPODS: 0.39.0
